@@ -1,4 +1,4 @@
-/* create variables */
+// create variables 
 
 /**
 * #1
@@ -10,7 +10,9 @@
 * It should be a String.
 **/
 
-
+var firstName = 'Riki';
+var lastName = 'Fujimoto';
+var birthPlace = 'in Hawaii';
 
 /**
 * #2
@@ -22,7 +24,9 @@
 * Their values should be a Number
 **/
 
-
+var favoriteNumber = 704
+var currentYear = 2019
+var thatOnePrinceSong = 7
 
 /**
 * #3
@@ -34,7 +38,10 @@
 * Their values should be a Boolean
 **/
 
-
+var isDaytime = true
+var isLeftHanded = false
+var inHawaii = true
+var isHappyCoding = true
 
 /**
 * #4
@@ -45,7 +52,8 @@
 * Their values should be a Null value
 **/
 
-
+var enrolledAtDevLeague = null
+var completedFridayPrep = null
 
 /**
 * #5a
@@ -56,7 +64,7 @@
 * which can be found along the west coast of The United States.
 **/
 
-
+var westCoat = ['Washington', 'California', 'Oregon']
 
 /**
 * #5b
@@ -67,7 +75,7 @@
 * Have at least ten even values in this array.
 **/
 
-
+var evenNumbers = [2,4,6,8,10,12,14,16,18,20]
 
 /**
 * #6a Arithmetic
@@ -80,8 +88,29 @@
 * Extend this behavior to include subtraction, multiplication and division.
 */
 
+function add(num1,num2,num3){
+return num1 + num2 + num3;
+}
 
+var sumOfNumbers = add(1,2,3)
 
+function subtract(num1,num2,num3){
+return num1 - num2 - num3;
+}
+
+var differenceOfNumbers = subtract(1,2,3)
+
+function multiply(num1,num2,num3){
+return num1 * num2 * num3;
+}
+
+var productOfNumbers =  multiply(1,2,3)
+
+function divide(num1,num2,num3){
+return num1 / num2 / num3;
+}
+
+var quotientOfNumbers = divide(1,2,3)
 
 /**
 * #6b Comparisons & Logic
@@ -102,6 +131,8 @@
 */
 
 
+var isEqual = 'Tacocat' == 'tacocat';
+
 
 /**
 * #6c Assignments
@@ -119,7 +150,7 @@
 *   it can only test that you declared the variable by giving it the right name.
 */
 
-
+var generalContainer = [1,true,'Hi',null,]
 
 /**
 * #7a
@@ -133,7 +164,11 @@
 * Store the return value to a variable named `jumpResult` and use console.log to inspect the value which was returned by your function
 **/
 
+function jump(height){
+return '"You jumped ' + height + ' feet high!"'  
+}
 
+var example7a = jump(9)
 
 /**
 * #7b
@@ -145,3 +180,8 @@
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 **/
 
+function cook(ingredient1,ingredient2,recipeName){
+ return '"' + ingredient1 + ' and ' + ingredient2 + ' make a ' + recipeName + '!"'
+}
+
+var example7b = cook('Tomatoes','Cheese','Pizza')
